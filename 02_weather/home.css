@@ -1,0 +1,111 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://th.bing.com/th/id/R.69515623e0602610c3726c12af746b7c?rik=B%2fDCavopp9n7tQ&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f80cDgU8.jpg&ehk=1Xs3Vr0Fg%2fSxGvO6lI19MxsgNmkBMkgstBMpZEOPw70%3d&risl=&pid=ImgRaw&r=0');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the app */
+.weather-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Search section */
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#cityInput {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#searchBtn {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#searchBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Weather information */
+.weather-info {
+    margin-top: 20px;
+}
+
+#cityName {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.temperature {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.weather-condition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-condition img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#conditionText {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .weather-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .temperature {
+        font-size: 36px;
+    }
+
+    #cityInput {
+        width: 65%;
+        font-size: 14px;
+    }
+
+    #searchBtn {
+        font-size: 14px;
+    }
+}
